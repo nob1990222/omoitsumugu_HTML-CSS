@@ -32,6 +32,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  background-color: #FEF8F9;
 }
 
 /* ナビゲーションのレイアウト */
@@ -125,7 +126,7 @@ flex-wrap: wrap;
 }
 
 /* スケジュール */
-.schedule {
+#schedule {
   background-color: #f5f5f5;
 }
 
@@ -177,7 +178,7 @@ flex-wrap: wrap;
 }
 
 /* MAP */
-.map {
+#map {
   background-color: #f5f5f5;
   padding-top: 10px;
 }
