@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>想い紡ぐ</title>
+     <meta charset="UTF-8">
+     <meta name="description" content="演劇サイトのポートフォリオです">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <!-- ロゴ -->
+      <a href="index.html" id="logo"><img src="images/logo.png" class="logo-img" alt="トップページに戻る"></a>
+
+      <!-- PC用ナビゲーション -->
+      <nav id="nav-pc">
+        <a href="index.html#story">Story</a>
+        <a href="cast.html">Cast&Staff</a>
+        <a href="index.html#news">NEWS</a>
+        <a href="introduction.html">Introduction</a>
+        <a href="index.html#schedule">Schedule</a>
+        <a href="goods.html">GOODS</a>
+      </nav>
+      <!-- スマホ用メニューボタン -->
+      <img id="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+
+      <!-- スマホ用ナビゲーション -->
+      <nav id="nav-sp">
+        <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+        <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img
+            src="images/logo-sp.png" alt="トップページに戻る"></a>
+        <a class="menu" href="index.html#story" onclick="document.getElementById('nav-sp').style.display = 'none'">Story</a>
+        <a class="menu" href="cast.html" onclick="document.getElementById('nav-sp').style.display = 'none'">Cast&Staff</a>
+        <a class="menu" href="index.html#news" onclick="document.getElementById('nav-sp').style.display = 'none'">NEWS</a>
+        <a class="menu" href="introduction.html"
+          onclick="document.getElementById('nav-sp').style.display = 'none'">Introduction</a>
+        <a class="menu" href="index.html#schedule"
+          onclick="document.getElementById('nav-sp').style.display = 'none'">Schedule</a>
+        <a class="menu" href="goods.html"
+          onclick="document.getElementById('nav-sp').style.display = 'none'">GOODS</a>
+        <div id="sns">
+          <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitterのリンク"></a>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <article>
+        <!-- メインビジュアル -->
+        <section id="main-visual">
+          <div>
+           <img src="images/main.png" id="main" alt="桜の下で笑いあう母親と娘">
+          </div>
+        </section>
+        <!-- ストーリー -->
+        <section id="story">
+          <div>
+           <h2>Story</h2>
+          </div>
+          <div id="story-p">
+            <p>
+              幼いころに天涯孤独多なり、家族の愛を知らないまま育った千春。<br>
+              ​自身の母としての資質に不安を抱きながら、精一杯育児に励むも自信を持てない彼女は日々悩みに直面していた。<br><br>
+              ある日、夫の海斗の転勤のためとある田舎町に引っ越すこととなった。<br>
+              そこで出会ったのは農業を営む富山夫婦、引っ越した日から都会とは違う距離感に戸惑う千春。<br>
+              最初は何かと気にかけてくこの隣人に煩わしさを感じていたものの、次第に幼いころに別れた両親の温かさを感じ始める。<br>
+              そんな中、ふと富山夫婦のアルバムを目にしてしまい…<br>
+              傷を抱えた家族たちがお互いの交流の中で紡ぐ日々の中で見つけたものとは
+            </p>
+          </div>
+        </section>
+
+        <!-- キャスト -->
+        <section id="cast">
+          <div>
+            <h2 id="cast-h2">Cast</h2>
+          </div>
+          <div id="cast-img">
+            <div class="cast-photo">
+              <img src="images/cast1.png" class="photo" alt="主人公志木千春">
+              <p class="cast-p">木村まみ<br>役：志木千春</p>
+            </div>
+            <div class="cast-photo">
+              <img src="images/cast2.png" class="photo" alt="娘志木小春">
+              <p class="cast-p">田中はるか<br>役：志木小春</p>
+            </div>
+            <div class="cast-photo">
+              <img src="images/cast3.png" class="photo" alt="夫志木海斗">
+              <p class="cast-p">遠藤直樹<br>役：志木海斗</p>
+            </div>
+            <div class="cast-photo">
+              <img src="images/cast4.png" class="photo" alt="隣人妻富山静江">
+              <p class="cast-p">森山晶子<br>役：富山静江</p>
+            </div>
+            <div class="cast-photo">
+              <img src="images/cast5.png" class="photo" alt="隣人夫富山茂">
+              <p class="cast-p">星銀次郎<br>役：富山茂</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- NEWS -->
+        <section id="news">
+          <h2>NEWS</h2>
+          <div class="news-p">
+            <p>２０２２／１０／１</p>
+            <p>キャスト情報解禁</p>
+          </div>
+          <div class="news-p">
+            <p>２０２２／１０／２０</p>
+            <p>チケット販売開始</p>
+          </div>
+          <div class="news-p">
+            <p>２０２２／１１／１０</p>
+            <p>公式ＳＮＳよりキャストによるメッセージを公開！</p>
+          </div>
+        </section>
+
+        <!-- スケジュール -->
+        <section id="schedule">
+          <h2>
+            Schedule
+          </h2>
+          <p id="day">１１月１５日（火）～１７日（木）</p>
+          <div class="schedule-table">
+            <div class="time">
+              <p class="schedule-d">昼公演</p>
+              <p class="schedule-op">１２：３０開場</p>
+              <p class="schedule-op">１３：００開演</p>
+            </div>
+            <div class="time">
+              <p class="schedule-d">夜公演</p>
+              <p class="schedule-op">１６：３０開場
+              <p class="schedule-op">１７：００開演</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Ticket -->
+        <section id="ticket">
+          <h2>
+            Ticket
+          </h2>
+          <h3 class="ticket-h3">前売り券</h3>
+          <div class="ticket-price">
+            <div class="price">
+             <p>一般<br>３０００円</p>
+            </div>
+            <div class="price">
+              <p>学生<br>２０００円</p>
+            </div>
+          </div>
+          <h3 class="ticket-h3">当日券</h3>
+          <div class="ticket-price">
+            <div class="price">
+              <p>一般<br>３５００円</p>
+            </div>
+            <div class="price">
+              <p>学生<br>２５００円</p>
+            </div>
+          </div>
+            
+        </section>
+
+        <!-- MAP -->
+        <section id="map">
+          <h2>MAP</h2>
+          <div id="google-map">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5752764324216!2d139.67085072641638!3d35.66283453098316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f3417f30d619%3A0x9157392254827ee3!2z44CSMTU1LTAwMzEg5p2x5Lqs6YO95LiW55Sw6LC35Yy65YyX5rKi77yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1682767520839!5m2!1sja!2sjp" 
+              width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="map-address">
+              <h3>劇場</h3>
+              <p>東京都世田谷区北沢１丁目１－１ サンプル劇場</p>
+              <p>池ノ上駅より徒歩８分</p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <!-- フッター -->
+    <footer>
+      <div id="footer">
+        <div id="footer-logo">
+          <img src="images/logo.png" id="footer-img" alt="想い紡ぐ">
+        </div>
+        <div id="footer-p">
+          <h4>公演日時</h4>
+          <p>２０２２／１１／１５～１１／１７</p>
+          <h4>劇場情報</h4>
+          <p>東京都世田谷区北沢１丁目１－１ サンプル劇場</p>
+        </div>
+      </div>
+      <p id="copyright">&copy;2023 Sample drama, Inc. All Right Reserved.</p>
+    </footer>
+  </body>
+</html>

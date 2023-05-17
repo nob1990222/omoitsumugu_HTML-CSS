@@ -1,0 +1,508 @@
+/* PC、スマホ共通スタイル */
+body {
+  font-family: 'Caveat', cursive , 'Noto Sans JP', sans-serif;
+}
+
+p {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+  color: #e28585;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  color: #e28585;
+}
+
+/* ==============
+PC用のスタイル
+============== */
+@media screen and (min-width: 768px) {
+/* 横幅設定 */
+body {
+  margin: 0 auto 0 auto;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ナビゲーションのレイアウト */
+#nav-pc {
+  text-align: right;
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+}
+
+#logo {
+  width: 25%;
+  margin-left: 40px;
+}
+
+.logo-img {
+  width: 25%;
+}
+
+/* ナビゲーションのリンク */
+#nav-pc > a {
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 15px;
+  flex-wrap: wrap;
+}
+#nav-pc > a:link {
+  color: #e28585;
+}
+#nav-pc > a:visited {
+  color: #e28585;
+}
+#nav-pc > a:hover {
+  color: #e28585;
+}
+#nav-pc > a:active {
+  color: #e28585;
+}
+
+/* スマホ用ナビゲーション非表示 */
+#nav-sp,
+#menu-sp {
+  display: none;
+}
+
+/* メインビジュアル */
+#main-visual {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+#main {
+  width: 100%;
+  height: auto;
+}
+
+/* ストーリー */
+#story-p {
+  text-align: center;
+}
+
+/* キャスト */
+#cast {
+  flex-wrap: wrap;
+  background-color: #f5f5f5;
+}
+
+#cast-h2 {
+  position: relative;
+  padding-top: 40px;
+}
+
+#cast-img {
+display: flex;
+flex-wrap: wrap;
+}
+
+.cast-photo {
+  text-align: center;
+  width: 20%;
+}
+
+.photo {
+  width: 75%;
+}
+
+/* NEWS */
+
+#news {
+  margin-left: 20%;
+}
+
+/* スケジュール */
+.schedule {
+  background-color: #f5f5f5;
+}
+
+.schedule h2 {
+  padding-top: 40px;
+}
+
+#day {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.schedule-table {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.time {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.schedule-d {
+  font-size: 30px;
+}
+
+/* チケット */
+
+.ticket-h3 {
+  text-align: center;
+  font-size: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.ticket-price {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.price {
+  margin-left: 30px;
+  text-align: center;
+  width: 20%;
+}
+
+/* MAP */
+.map {
+  background-color: #f5f5f5;
+  padding-top: 10px;
+}
+#google-map {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#google-map > iframe {
+  width: 600px;
+  height: 400px;
+}
+
+#map-address {
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 400px;
+  position: relative;
+}
+
+#map-address img {
+  width: 100%;
+}
+
+/* フッター */
+footer {
+  background-color: #f2e7e7;
+}
+#footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#footer-logo {
+  width: 300px;
+  margin-top: 30px;
+}
+
+#footer-img {
+  width: 200px;
+  margin-left: 20px;
+}
+
+#footer-p {
+  margin-top: 30px;
+width: 500px;
+height: auto;
+margin-left: 50px;
+}
+
+#copyright {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* Cast＆Staffページ */
+.cast-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 0 50px 0;
+}
+
+.cast-info h3 {
+  font-size: 30px;
+}
+
+.cast_photo {
+  width: 400px;
+  margin-right: 80px;
+}
+
+.cast {
+  width: 100%;
+  height: auto;
+}
+
+#staff p {
+  text-align: center;
+}
+
+#staff div {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#staff {
+  background-color: #f5f5f5;
+}
+
+.staff-p {
+  font-size: 30px;
+}
+
+#staff h2 {
+  padding-top: 40px;
+}
+
+/* イントロダクション */
+#introduction p {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#introduction-img {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+
+/* グッズ */
+#goods {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#portrait {
+  width: 300px;
+}
+
+#book {
+  margin-top: 50px;
+}
+
+#tshirt {
+  width: 50%;
+  margin-top: 50px;
+}
+}
+
+/*===================
+ スマホ用のスタイル 
+ ===================*/
+ @media screen and (max-width: 767px) {
+   body {
+    min-width: 375px;
+    margin: 0;
+   }
+
+   /* PC用ナビゲーション非表示 */
+   #nav-pc {
+    display: none;
+   }
+
+   /* ハンバーガーメニュー */
+   #menu-sp {
+    float: right;
+    padding: 0;
+   }
+   /* スマホ用ナビゲーション表示切替 */
+   #nav-sp {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 100;
+   }
+   /* クローズボタン */
+   #close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+   }
+
+   /* ナビゲーションメニュー用ロゴ */
+   #logo-sp {
+    margin: 80px 0 30px 20px;
+   }
+   /* ナビゲーションリンクの装飾 */
+   #nav-sp > a {
+    display: block;
+   }
+   #nav-sp > a:link {
+    color: #e28585;
+   }
+   #nav-sp > a:visited {
+    color: #e28585;
+   }
+   #nav-sp > a:hover {
+    color: #e28585;
+   }
+   #nav-sp > a:active {
+    color: #e28585;
+   }
+   #nav-sp > .menu {
+    text-decoration: none;
+    display: block;
+    margin: 20px 30px 20px 30px;
+    height: 44px;
+    font-size: 30px;
+   }
+   .logo-img {
+    width: 25%;
+   }
+   #sns {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+   }
+
+   /* メインビジュアル */
+   #main {
+    width: 100%;
+    height: auto;
+   }
+
+   /* ストーリー */
+   #story-p {
+    text-align: center;
+    padding: 0 20px 0 20px;
+   }
+
+   /* キャスト */
+   .photo {
+    width: 100%;
+    height: auto;
+   }
+   .cast-p {
+    text-align: center;
+   }
+
+   /* NEWS */
+   .news-p {
+    margin-left: 20px;
+    margin-right: 20px;
+   }
+
+   /* スケジュール */
+   #day {
+    text-align: center;
+   }
+
+   .time p {
+    text-align: center;
+   }
+
+   /* チケット */
+   .ticket-h3 {
+    text-align: center;
+   }
+   .price {
+    text-align: center;
+   }
+
+   /* マップ */
+   #google-map > iframe {
+    width: 100%;
+    height: 400px;
+   }
+   #map-address {
+    margin-left: 20px;
+    margin-right: 20px;
+   }
+
+   #map-address img {
+    width: 100%;
+  }
+
+   /* フッター */
+   footer {
+    background-color: #f2e7e7;
+  }
+
+  #footer-p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #footer-img {
+    width: 25%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+  #copyright {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+   /* Cast&Staffページ */
+   .cast {
+    width: 100%;
+    height: auto;
+   }
+
+   .cast-info h3 {
+    text-align: center;
+   }
+   .cast-info p {
+    text-align: center;
+   }
+   #staff p {
+    text-align: center;
+  }
+
+  /* イントロダクション */
+  #introduction p {
+    text-align: center;
+    padding: 0 20px 0 20px;
+  }
+
+  #introduction-img {
+    width: 100%;
+  }
+
+  /* GOODS */
+  #portrait {
+    width: 100%;
+  }
+  #book {
+    width: 100%;
+  }
+  #tshirt {
+    width: 100%;
+  }
+  #goods {
+    text-align: center;
+  }
+ }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Sample Site</title>
+     <meta charset="UTF-8">
+     <meta name="description" content="演劇サイトのポートフォリオです">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <!-- ロゴ -->
+      <a href="index.html" id="logo"><img src="images/logo.png" class="logo-img" alt="トップページに戻る"></a>
+
+      <!-- PC用ナビゲーション -->
+      <nav id="nav-pc">
+        <a href="index.html#story">Story</a>
+        <a href="cast.html">Cast&Staff</a>
+        <a href="index.html#news">NEWS</a>
+        <a href="introduction.html">Introduction</a>
+        <a href="index.html#schedule">Schedule</a>
+        <a href="goods.html">GOODS</a>
+      </nav>
+
+      <!-- スマホ用メニューボタン -->
+      <img id="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+
+      <!-- スマホ用ナビゲーション -->
+      <nav id="nav-sp">
+        <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+        <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img
+             src="images/logo-sp.png" alt="トップページに戻る"></a>
+        <a class="menu" href="index.html#story" onclick="document.getElementById('nav-sp').style.display = 'none'">Story</a>
+        <a class="menu" href="cast.html" onclick="document.getElementById('nav-sp').style.display = 'none'">Cast&Staff</a>
+        <a class="menu" href="index.html#news" onclick="document.getElementById('nav-sp').style.display = 'none'">NEWS</a>
+        <a class="menu" href="introduction.html"
+           onclick="document.getElementById('nav-sp').style.display = 'none'">Introduction</a>
+        <a class="menu" href="index.html#schedule"
+           onclick="document.getElementById('nav-sp').style.display = 'none'">Schedule</a>
+        <a class="menu" href="goods.html"
+           onclick="document.getElementById('nav-sp').style.display = 'none'">GOODS</a>
+        <div id="sns">
+          <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitterのリンク"></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h1>Introduction</h1>
+
+        <section id="introduction">
+          <p>家族愛は、私たちが人生で最も強力な絆と感情を経験するものの一つです。</p>
+          <p>この作品では、家族の絆という普遍的なテーマに焦点を当て、喜びや悲しみ、困難な時期や成長の機会において</p>
+          <p>私たちを支え、励まし、時には叱咤激励してくれます。</p>
+          <p>それぞれが個性的でありながら、共通の目標や価値観を持ち、互いを受け入れ合うことで、真の絆が生まれます。</p>
+          <p>この作品では、家族の日常の喜びや笑い</p>
+          <p>そして家族が直面する困難や試練を通じて、家族愛の尊さを描き出します。</p>
+          <p>家族の絆は時に揺らぎ、砕けることもありますが、</p>
+          <p>それでも再び立ち上がり、力強く絆を取り戻す姿</p>
+          <p>この作品を通じて、『家族愛』という普遍的なテーマを届け、家族の絆の尊さや大切さを再認識してもらいたいと思っています。</p>
+          <img src="images/introduction.png" id="introduction-img" alt="桜並木を歩く女性の後ろ姿">
+        </section>
+      </article>
+
+    </main>
+    <!-- フッター -->
+    <footer>
+      <div id="footer">
+        <div id="footer-logo">
+          <img src="images/logo.png" id="footer-img" alt="想い紡ぐ">
+        </div>
+        <div id="footer-p">
+          <h4>公演日時</h4>
+          <p>２０２２／１１／１５～１１／１７</p>
+          <h4>劇場情報</h4>
+          <p>東京都世田谷区北沢１丁目１－１ サンプル劇場</p>
+        </div>
+      </div>
+      <p id="copyright">&copy;2023 Sample drama, Inc. All Right Reserved.</p>
+    </footer>
+    
+  </body>
+
+</html>

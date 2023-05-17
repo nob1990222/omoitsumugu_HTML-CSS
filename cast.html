@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Sample Site</title>
+     <meta charset="UTF-8">
+     <meta name="description" content="演劇サイトのポートフォリオです">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <!-- ロゴ -->
+      <a href="index.html" id="logo"><img src="images/logo.png" class="logo-img" alt="トップページに戻る"></a>
+
+      <!-- PC用ナビゲーション -->
+      <nav id="nav-pc">
+        <a href="index.html#story">Story</a>
+        <a href="cast.html">Cast&Staff</a>
+        <a href="index.html#news">NEWS</a>
+        <a href="introduction.html">Introduction</a>
+        <a href="index.html#schedule">Schedule</a>
+        <a href="goods.html">GOODS</a>
+      </nav>
+
+      <!-- スマホ用メニューボタン -->
+      <img id="menu-sp" src="images/button-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+
+      <!-- スマホ用ナビゲーション -->
+      <nav id="nav-sp">
+       <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+       <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img
+             src="images/logo-sp.png" alt="トップページに戻る"></a>
+       <a class="menu" href="index.html#story" onclick="document.getElementById('nav-sp').style.display = 'none'">Story</a>
+       <a class="menu" href="cast.html" onclick="document.getElementById('nav-sp').style.display = 'none'">Cast&Staff</a>
+       <a class="menu" href="index.html#news" onclick="document.getElementById('nav-sp').style.display = 'none'">NEWS</a>
+       <a class="menu" href="introduction.html"
+           onclick="document.getElementById('nav-sp').style.display = 'none'">Introduction</a>
+       <a class="menu" href="index.html#schedule"
+           onclick="document.getElementById('nav-sp').style.display = 'none'">Schedule</a>
+       <a class="menu" href="goods.html"
+           onclick="document.getElementById('nav-sp').style.display = 'none'">GOODS</a>
+       <div id="sns">
+         <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitterのリンク"></a>
+       </div>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <h1>Cast&Staff</h1>
+
+        <!-- キャスト -->
+        <section>
+          <h2>Cast</h2>
+          <div class="cast-info">
+            <div class="cast_photo">
+              <img src="images/cast1.png" class="cast" alt="主人公志木千春">
+            </div>
+            <div>
+              <h3>木村まみ</h3>
+              <p>役名</p>
+              <p>志木千春</p>
+              <p>優しさと思いやりが溢れる</p>
+              <p>家族の絆が紡ぐ幸せを考えて</p>
+              <p>精一杯演じます</p>
+            </div>
+          </div>
+          <div class="cast-info">
+            <div class="cast_photo">
+              <img src="images/cast2.png" class="cast" alt="娘志木小春">
+            </div>
+            <div>
+              <h3>田中はるか</h3>
+              <p>役名</p>
+              <p>志木小春</p>
+              <p>家族と一緒の楽しさ</p>
+              <p>時にはケンカもしちゃうけど</p>
+              <p>笑顔になってもらえたら</p>
+              <p>うれしいです</p>
+            </div>
+          </div>
+          <div class="cast-info">
+            <div class="cast_photo">
+              <img src="images/cast3.png" class="cast" alt="父志木海斗">
+            </div>
+            <div>
+              <h3>遠藤直樹</h3>
+              <p>役名</p>
+              <p>志木海斗</p>
+              <p>家族のために頑張る</p>
+              <p>父親としての愛情や責任感、</p>
+              <p>そういったものを</p>
+              <p>考え演じさせてもらいます</p>
+            </div>
+          </div>
+          <div class="cast-info">
+            <div class="cast_photo">
+              <img src="images/cast4.png" class="cast" alt="隣人妻富山静江">
+            </div>
+            <div>
+              <h3>森山晶子</h3>
+              <p>役名</p>
+              <p>富山静江</p>
+              <p>母の愛と優しさが息づく物語</p>
+              <p>辛いことでも乗り越えて</p>
+              <p>家族愛の素晴らしさを</p>
+              <p>役を通して伝えたいです</p>
+            </div>
+          </div>
+          <div class="cast-info">
+            <div class="cast_photo">
+              <img src="images/cast5.png" class="cast" alt="隣人夫富山茂">
+            </div>
+            <div>
+              <h3>星銀次郎</h3>
+              <p>役名</p>
+              <p>富山茂</p>
+              <p>人生の喜びや悲しみ、歳月を</p>
+              <p>共に歩んできた夫婦たちの</p>
+              <p>温かな思いやり今の暗い</p>
+              <p>世の中でも温かく過ごしたい</p>
+            </div>
+          </div>
+        </section>
+        <section id="staff">
+          <h2>Staff</h2>
+          <div>
+            <p class="staff-p">作・演出</p>
+            <p>田中 ゆり子</p>
+          </div>
+          <div>
+            <p class="staff-p">舞台監督</p>
+            <p>甲賀 守</p>
+          </div>
+          <div>
+            <p class="staff-p">協力</p>
+            <p>劇団サンプル</p>
+            <p>サンプルプロダクション</p>
+          </div>
+          <div>
+            <p class="staff-p">企画・制作</p>
+            <p>サンプル</p>
+          </div>
+        </section>
+      </article>
+    </main>
+    <!-- フッター -->
+    <footer>
+      <div id="footer">
+        <div id="footer-logo">
+          <img src="images/logo.png" id="footer-img" alt="想い紡ぐ">
+        </div>
+        <div id="footer-p">
+          <h4>公演日時</h4>
+          <p>２０２２／１１／１５～１１／１７</p>
+          <h4>劇場情報</h4>
+          <p>東京都世田谷区北沢１丁目１－１ サンプル劇場</p>
+        </div>
+      </div>
+      <p id="copyright">&copy;2023 Sample drama, Inc. All Right Reserved.</p>
+    </footer>
+  </body>
+
+</html>
